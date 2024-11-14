@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+header {
+    background-color: #16423C;
+    color: #E9EFEC;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(65, 65, 65, 0.1); /* Card effect */
+}
+
+aside {
+    width: 150px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, background-color 1s; /* Transition effects */
+    overflow: hidden; /* Sembunyikan scrollbar default */
+    overflow-y: auto; /* Biarkan konten dapat di-scroll secara vertikal */
+}
+
+aside:hover {
+    transform: translateY(-5px); /* Raise on hover */
+    background-color: #f0f0f0; /* Background color change */
+}    
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 15px 0; /* Increased margin */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 10px; /* Uniform padding */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #5f6363; /* Change background on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff; /* White background for main content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.3s ease; /* Transition for smooth effect */
+}
+
+main:hover {
+    transform: translateY(-5px); /* Raise slightly on hover */
+}
+
+footer {
+    background-color: #333; /* Simpel, warna gelap */
+    color: #fff; /* Teks putih */
+    text-align: center; /* Pusatkan teks */
+    padding: 5px 0; /* Kurangi padding untuk tampilan lebih ringkas */
+    font-size: 14px; /* Ukuran teks lebih kecil untuk tampilan minimalis */
+    border-top-left-radius: 10px; /* Kurangi radius untuk tampilan lebih minimalis */
+    border-top-right-radius: 10px;
+}
+/* Gaya untuk scrollbar di browser berbasis WebKit seperti Chrome dan Safari */
+::-webkit-scrollbar {
+    width: 12px; /* Lebar scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Warna latar belakang track scrollbar */
+    border-radius: 10px; /* Radius sudut track scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a0a0a0; /* Warna bagian geser scrollbar */
+    border-radius: 10px; /* Radius sudut bagian geser scrollbar */
+    transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #737373; /* Warna saat hover pada bagian geser scrollbar */
+}
+
+/* Gaya untuk scrollbar di Firefox */
+html {
+    scrollbar-width: thin; /* Lebar scrollbar */
+    scrollbar-color: #a0a0a0 #f0f0f0; /* Warna bagian geser dan latar belakang track */
+}
+
+/* Pastikan elemen yang ingin memiliki scrollbar memiliki overflow yang sesuai */
+.container, main, aside {
+    overflow: auto; /* Atau overflow: scroll; jika Anda ingin scrollbar selalu terlihat */
+}
+
+/* Untuk scrollbar di Firefox */
+html {
+    scrollbar-width: thin; /* Lebar scrollbar */
+    scrollbar-color: #a0a0a0 #f0f0f0; /* Warna bagian geser dan latar belakang track */
+}
